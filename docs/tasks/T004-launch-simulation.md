@@ -1,6 +1,6 @@
 # T004 Launch Simulation
 
-Status: `Not Started`
+Status: `Done`
 
 ## Goal
 
@@ -47,6 +47,14 @@ Emit events for:
 - Orbit achieved.
 - Launch failed.
 
+Implemented:
+
+- Added `src/sim/launch` with launch state, stage, environment, command, and event types.
+- Added default two-stage launch state and environment thresholds.
+- Added `updateLaunchSimulation` with throttle, pitch, fuel burn, simplified thrust, gravity, drag, staging, orbit detection, and failure detection.
+- Added helpers for launch mass and orbit-threshold checks.
+- Added tests for fuel burn, zero-throttle behavior, staging, orbit detection, failure states, and rendering/browser import boundaries.
+
 ## Acceptance Criteria
 
 - Launch simulation runs without rendering.
@@ -62,6 +70,21 @@ Emit events for:
 - Orbit is achieved only when altitude and velocity thresholds are met.
 - Launch failure conditions are detected.
 
+## Verification
+
+Passed:
+
+```sh
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run typecheck
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run test
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run build
+```
+
+Notes:
+
+- No rendering code was added.
+- npm still reports dependency audit vulnerabilities from the installed dependency tree. No forced audit fix was applied.
+
 ## Handoff Notes
 
-After completion, T005 Launch Rendering can consume this simulation state.
+T004 has been reviewed and marked done. T005 Launch Rendering can consume this simulation state.

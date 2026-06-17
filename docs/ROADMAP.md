@@ -18,7 +18,8 @@ This roadmap is the source of truth for V1 task progress. Work one task at a tim
 - Dependencies are installed and locked.
 - T002 is done.
 - T003 is done.
-- Next tasks: T004 Launch Simulation and T006 Docking Simulation.
+- T004 is done.
+- Next task: T005 Launch Rendering. T006 Docking Simulation can also proceed independently from the completed core.
 
 ## V1 Task Index
 
@@ -27,7 +28,7 @@ This roadmap is the source of truth for V1 task progress. Work one task at a tim
 | [T001 Tracking Foundation](tasks/T001-tracking-foundation.md)       | Review Ready | None             | Create trackable docs and task files for multi-agent work.                   |
 | [T002 Project Scaffold](tasks/T002-project-scaffold.md)             | Done         | T001             | Initialize React, TypeScript, Vite, tooling, and empty screen shells.        |
 | [T003 Simulation Core](tasks/T003-simulation-core.md)               | Done         | T002             | Add browser-independent simulation types, update loop, commands, and events. |
-| [T004 Launch Simulation](tasks/T004-launch-simulation.md)           | Not Started  | T003             | Implement simplified launch physics, fuel, staging, and orbit detection.     |
+| [T004 Launch Simulation](tasks/T004-launch-simulation.md)           | Done         | T003             | Implement simplified launch physics, fuel, staging, and orbit detection.     |
 | [T005 Launch Rendering](tasks/T005-launch-rendering.md)             | Not Started  | T004             | Render playable 2D launch phase in Phaser.                                   |
 | [T006 Docking Simulation](tasks/T006-docking-simulation.md)         | Not Started  | T003             | Implement six-degree-of-freedom docking rules and validation.                |
 | [T007 Docking Rendering](tasks/T007-docking-rendering.md)           | Not Started  | T006             | Render first-person docking in React Three Fiber.                            |
