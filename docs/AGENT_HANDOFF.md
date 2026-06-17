@@ -2,7 +2,7 @@
 
 ## Current Project State
 
-The repository contains the original project brief, tracking documentation, an initialized git repository, a verified Vite React TypeScript scaffold, and the completed simulation core foundation.
+The repository contains the original project brief, tracking documentation, an initialized git repository, a verified Vite React TypeScript scaffold, the completed simulation core foundation, and the completed launch simulation.
 
 ## Last Completed Work
 
@@ -12,6 +12,8 @@ The repository contains the original project brief, tracking documentation, an i
 - Added app scaffold, dependency manifest and lockfile, strict TypeScript config, Vitest config, empty screen shells, a minimal Zustand shell store, and app shell smoke tests.
 - T003 Simulation Core was implemented and is marked `Done`.
 - Added shared simulation types, a fixed-step runner, and core tests under `src/sim/core`.
+- T004 Launch Simulation was implemented and is marked `Done`.
+- Added launch state/types, default two-stage launch configuration, simplified physics, staging, orbit detection, failure events, and launch simulation tests under `src/sim/launch`.
 
 ## Active Task
 
@@ -19,7 +21,7 @@ The repository contains the original project brief, tracking documentation, an i
 
 ## Next Task
 
-- T004 Launch Simulation or T006 Docking Simulation.
+- T005 Launch Rendering, or T006 Docking Simulation if simulation work proceeds independently.
 
 ## Before Starting The Next Task
 
