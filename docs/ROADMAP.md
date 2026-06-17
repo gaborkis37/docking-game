@@ -16,16 +16,17 @@ This roadmap is the source of truth for V1 task progress. Work one task at a tim
 - Git repository has been initialized.
 - App scaffold files exist.
 - Dependencies are installed and locked.
-- T002 is review-ready.
-- Next task after review: T003 Simulation Core.
+- T002 is done.
+- T003 is done.
+- Next tasks: T004 Launch Simulation and T006 Docking Simulation.
 
 ## V1 Task Index
 
 | Task                                                                | Status       | Depends On       | Summary                                                                      |
 | ------------------------------------------------------------------- | ------------ | ---------------- | ---------------------------------------------------------------------------- |
 | [T001 Tracking Foundation](tasks/T001-tracking-foundation.md)       | Review Ready | None             | Create trackable docs and task files for multi-agent work.                   |
-| [T002 Project Scaffold](tasks/T002-project-scaffold.md)             | Review Ready | T001             | Initialize React, TypeScript, Vite, tooling, and empty screen shells.        |
-| [T003 Simulation Core](tasks/T003-simulation-core.md)               | Not Started  | T002             | Add browser-independent simulation types, update loop, commands, and events. |
+| [T002 Project Scaffold](tasks/T002-project-scaffold.md)             | Done         | T001             | Initialize React, TypeScript, Vite, tooling, and empty screen shells.        |
+| [T003 Simulation Core](tasks/T003-simulation-core.md)               | Done         | T002             | Add browser-independent simulation types, update loop, commands, and events. |
 | [T004 Launch Simulation](tasks/T004-launch-simulation.md)           | Not Started  | T003             | Implement simplified launch physics, fuel, staging, and orbit detection.     |
 | [T005 Launch Rendering](tasks/T005-launch-rendering.md)             | Not Started  | T004             | Render playable 2D launch phase in Phaser.                                   |
 | [T006 Docking Simulation](tasks/T006-docking-simulation.md)         | Not Started  | T003             | Implement six-degree-of-freedom docking rules and validation.                |

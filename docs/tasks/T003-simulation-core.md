@@ -1,6 +1,6 @@
 # T003 Simulation Core
 
-Status: `Not Started`
+Status: `Done`
 
 ## Goal
 
@@ -34,6 +34,13 @@ The simulation core must not import:
 - React Three Fiber.
 - Browser DOM APIs.
 
+Implemented:
+
+- Added shared simulation command, event, step, result, and update types in `src/sim/core`.
+- Added a renderer-agnostic fixed-step runner.
+- Added focused tests for fixed-step advancement, event output, source-state immutability, and forbidden rendering/browser imports.
+- Added `@types/node` as a dev dependency for source-inspection tests.
+
 ## Acceptance Criteria
 
 - Simulation core can run in Vitest without browser rendering.
@@ -46,6 +53,20 @@ The simulation core must not import:
 - Events can be returned without mutating renderer state.
 - Core module imports remain independent from rendering libraries.
 
+## Verification
+
+Passed:
+
+```sh
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run typecheck
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run test
+PATH=/usr/local/bin:/opt/homebrew/bin:$PATH /usr/local/bin/npm run build
+```
+
+Notes:
+
+- npm still reports 5 dependency audit vulnerabilities from the installed dependency tree. No forced audit fix was applied.
+
 ## Handoff Notes
 
-After completion, T004 Launch Simulation and T006 Docking Simulation can proceed independently.
+T003 has been reviewed and marked done. T004 Launch Simulation and T006 Docking Simulation can proceed independently.

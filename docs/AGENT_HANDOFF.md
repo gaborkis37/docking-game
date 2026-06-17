@@ -2,36 +2,38 @@
 
 ## Current Project State
 
-The repository contains the original project brief, tracking documentation, an initialized git repository, and a verified Vite React TypeScript scaffold. T002 Project Scaffold is review-ready.
+The repository contains the original project brief, tracking documentation, an initialized git repository, a verified Vite React TypeScript scaffold, and the completed simulation core foundation.
 
 ## Last Completed Work
 
 - T001 Tracking Foundation was implemented and is marked `Review Ready`.
 - Created roadmap, architecture notes, asset tracking notes, and task specs T001 through T010.
-- T002 Project Scaffold was implemented and is marked `Review Ready`.
+- T002 Project Scaffold was implemented and is marked `Done`.
 - Added app scaffold, dependency manifest and lockfile, strict TypeScript config, Vitest config, empty screen shells, a minimal Zustand shell store, and app shell smoke tests.
+- T003 Simulation Core was implemented and is marked `Done`.
+- Added shared simulation types, a fixed-step runner, and core tests under `src/sim/core`.
 
 ## Active Task
 
-- None. T002 is ready for review.
+- None.
 
 ## Next Task
 
-- T003 Simulation Core after T002 review.
+- T004 Launch Simulation or T006 Docking Simulation.
 
-## Before Starting T003
+## Before Starting The Next Task
 
 Read these files:
 
 1. `space-docking-game-project-brief-v2.md`
 2. `docs/ROADMAP.md`
 3. `docs/ARCHITECTURE.md`
-4. `docs/tasks/T003-simulation-core.md`
+4. `docs/tasks/T004-launch-simulation.md` or `docs/tasks/T006-docking-simulation.md`
 
 Then update:
 
-- `docs/tasks/T003-simulation-core.md` status to `In Progress`.
-- `docs/ROADMAP.md` T003 status to `In Progress`.
+- The selected task status to `In Progress`.
+- `docs/ROADMAP.md` selected task status to `In Progress`.
 - This file's active task section.
 
 ## Blockers

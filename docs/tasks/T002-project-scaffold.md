@@ -1,6 +1,6 @@
 # T002 Project Scaffold
 
-Status: `Review Ready`
+Status: `Done`
 
 ## Goal
 
@@ -79,4 +79,4 @@ Notes:
 
 ## Handoff Notes
 
-T002 is ready for review. The next task will be T003 Simulation Core after review.
+T002 has been reviewed and marked done. The next completed foundation task is T003 Simulation Core.
